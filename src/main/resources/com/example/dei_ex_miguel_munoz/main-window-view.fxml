@@ -2,7 +2,7 @@
 
 <?import javafx.geometry.Insets?>
 <?import javafx.scene.control.Button?>
-<?import javafx.scene.control.ComboBox?>
+<?import javafx.scene.control.ChoiceBox?>
 <?import javafx.scene.control.Label?>
 <?import javafx.scene.control.Spinner?>
 <?import javafx.scene.control.TableColumn?>
@@ -15,8 +15,7 @@
 <?import javafx.scene.layout.VBox?>
 <?import javafx.scene.text.Font?>
 
-
-<BorderPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="620.0" prefWidth="1100.0" xmlns="http://javafx.com/javafx/19" xmlns:fx="http://javafx.com/fxml/1">
+<BorderPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="620.0" prefWidth="1100.0" xmlns="http://javafx.com/javafx/19" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.dei_ex_miguel_munoz.MainWindowController">
    <top>
       <GridPane BorderPane.alignment="CENTER">
          <columnConstraints>
@@ -66,7 +65,7 @@
                         <Font name="Arial" size="13.0" />
                      </font>
                   </Label>
-                  <TextField fx:id="inputName" prefHeight="25.0" GridPane.columnIndex="1" />
+                  <TextField fx:id="inputName" prefHeight="26.0" prefWidth="160.0" GridPane.columnIndex="1" />
                </children>
             </GridPane>
             <GridPane>
@@ -83,7 +82,7 @@
                         <Font name="Arial" size="13.0" />
                      </font>
                   </Label>
-                  <ComboBox fx:id="inputSex" prefHeight="25.0" prefWidth="162.0" GridPane.columnIndex="1" />
+                  <ChoiceBox fx:id="inputSex" prefHeight="26.0" prefWidth="203.0" GridPane.columnIndex="1" />
                </children>
                <VBox.margin>
                   <Insets top="15.0" />
@@ -103,7 +102,7 @@
                         <Font name="Arial" size="13.0" />
                      </font>
                   </Label>
-                  <Spinner fx:id="inputAge" GridPane.columnIndex="1" />
+                  <Spinner fx:id="inputAge" editable="true" prefHeight="26.0" prefWidth="179.0" GridPane.columnIndex="1" />
                </children>
                <VBox.margin>
                   <Insets top="15.0" />
@@ -123,7 +122,7 @@
                         <Font name="Arial" size="13.0" />
                      </font>
                   </Label>
-                  <Spinner fx:id="inputWeight" GridPane.columnIndex="1" />
+                  <Spinner fx:id="inputWeight" editable="true" prefHeight="26.0" prefWidth="173.0" GridPane.columnIndex="1" />
                </children>
                <VBox.margin>
                   <Insets top="15.0" />
@@ -143,7 +142,7 @@
                         <Font name="Arial" size="13.0" />
                      </font>
                   </Label>
-                  <Spinner fx:id="inputHeight" GridPane.columnIndex="1" />
+                  <Spinner fx:id="inputHeight" editable="true" prefHeight="26.0" prefWidth="183.0" GridPane.columnIndex="1" />
                </children>
                <VBox.margin>
                   <Insets top="15.0" />
@@ -163,7 +162,7 @@
                         <Font name="Arial" size="13.0" />
                      </font>
                   </Label>
-                  <ComboBox fx:id="inputActivity" prefHeight="25.0" prefWidth="162.0" GridPane.columnIndex="1" />
+                  <ChoiceBox fx:id="inputActivity" prefHeight="26.0" prefWidth="203.0" GridPane.columnIndex="1" />
                </children>
                <VBox.margin>
                   <Insets top="15.0" />
@@ -186,7 +185,7 @@
                 <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
               </rowConstraints>
                <children>
-                  <Button fx:id="btnAddToTable" alignment="CENTER" mnemonicParsing="false" text="Añadir a la tabla" GridPane.halignment="CENTER" />
+                  <Button fx:id="btnAddToTable" alignment="CENTER" mnemonicParsing="false" onAction="#addToTheTable" text="Añadir a la tabla" GridPane.halignment="CENTER" />
                </children>
                <VBox.margin>
                   <Insets top="25.0" />

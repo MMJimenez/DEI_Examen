@@ -1,17 +1,21 @@
 package com.example.dei_ex_miguel_munoz;
 
+import com.example.dei_ex_miguel_munoz.model.MetabolismCalculator;
+import com.example.dei_ex_miguel_munoz.model.Person;
+
 public class Pruebas {
     public static void main(String[] args) {
-        Person per = new Person();
-        per.setAge(45);
-        per.setActivity(Person.ACTIVITY.MUY_LIGERA);
-        per.setHeigth(140);
-        per.setWeigth(70.05);
-        per.setSex("Masculino");
+//        Person per = new Person("Juan", Person.GENRE.MEN, 45, 70.5, 170, Person.ACTIVITY.MUY_LIGERA);
 
-        Double GET = MetabolismCalculator.calculateGET(per);
-        Double GER = MetabolismCalculator.calculateGER(per);
-        System.out.println(GET);
-        System.out.println(GER);
+//        System.out.println(per.getGET());
+//        System.out.println(per.getGER());
+
+        var list = Person.GENRE.values();
+        for (Person.GENRE g: list
+             ) {
+            System.out.println(g);
+        }
+
+
     }
 }
