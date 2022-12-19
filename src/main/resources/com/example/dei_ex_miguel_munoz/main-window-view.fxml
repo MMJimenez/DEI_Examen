@@ -66,7 +66,7 @@
                         <Font name="Arial" size="13.0" />
                      </font>
                   </Label>
-                  <TextField prefHeight="25.0" GridPane.columnIndex="1" />
+                  <TextField fx:id="inputName" prefHeight="25.0" GridPane.columnIndex="1" />
                </children>
             </GridPane>
             <GridPane>
@@ -83,7 +83,7 @@
                         <Font name="Arial" size="13.0" />
                      </font>
                   </Label>
-                  <ComboBox prefHeight="25.0" prefWidth="162.0" GridPane.columnIndex="1" />
+                  <ComboBox fx:id="inputSex" prefHeight="25.0" prefWidth="162.0" GridPane.columnIndex="1" />
                </children>
                <VBox.margin>
                   <Insets top="15.0" />
@@ -103,7 +103,7 @@
                         <Font name="Arial" size="13.0" />
                      </font>
                   </Label>
-                  <Spinner GridPane.columnIndex="1" />
+                  <Spinner fx:id="inputAge" GridPane.columnIndex="1" />
                </children>
                <VBox.margin>
                   <Insets top="15.0" />
@@ -123,7 +123,7 @@
                         <Font name="Arial" size="13.0" />
                      </font>
                   </Label>
-                  <Spinner GridPane.columnIndex="1" />
+                  <Spinner fx:id="inputWeight" GridPane.columnIndex="1" />
                </children>
                <VBox.margin>
                   <Insets top="15.0" />
@@ -143,7 +143,7 @@
                         <Font name="Arial" size="13.0" />
                      </font>
                   </Label>
-                  <Spinner GridPane.columnIndex="1" />
+                  <Spinner fx:id="inputHeight" GridPane.columnIndex="1" />
                </children>
                <VBox.margin>
                   <Insets top="15.0" />
@@ -163,7 +163,7 @@
                         <Font name="Arial" size="13.0" />
                      </font>
                   </Label>
-                  <ComboBox prefHeight="25.0" prefWidth="162.0" GridPane.columnIndex="1" />
+                  <ComboBox fx:id="inputActivity" prefHeight="25.0" prefWidth="162.0" GridPane.columnIndex="1" />
                </children>
                <VBox.margin>
                   <Insets top="15.0" />
@@ -186,7 +186,7 @@
                 <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
               </rowConstraints>
                <children>
-                  <Button alignment="CENTER" mnemonicParsing="false" text="Añadir a la tabla" GridPane.halignment="CENTER" />
+                  <Button fx:id="btnAddToTable" alignment="CENTER" mnemonicParsing="false" text="Añadir a la tabla" GridPane.halignment="CENTER" />
                </children>
                <VBox.margin>
                   <Insets top="25.0" />
@@ -202,16 +202,16 @@
       </VBox>
    </left>
    <center>
-      <TableView prefHeight="200.0" prefWidth="330.0">
+      <TableView fx:id="table" prefHeight="200.0" prefWidth="330.0">
         <columns>
-          <TableColumn prefWidth="75.0" text="Nombre" />
-          <TableColumn prefWidth="75.0" text="Sexo" />
-            <TableColumn prefWidth="75.0" text="Edad" />
-            <TableColumn prefWidth="75.0" text="Peso" />
-            <TableColumn prefWidth="75.0" text="Altura" />
-            <TableColumn prefWidth="75.0" text="Actividad" />
-            <TableColumn prefWidth="75.0" text="GER" />
-            <TableColumn prefWidth="75.0" text="GET" />
+          <TableColumn fx:id="colName" prefWidth="75.0" text="Nombre" />
+          <TableColumn fx:id="colSex" prefWidth="75.0" text="Sexo" />
+            <TableColumn fx:id="colAge" prefWidth="75.0" text="Edad" />
+            <TableColumn fx:id="colWeight" prefWidth="75.0" text="Peso" />
+            <TableColumn fx:id="colHeight" prefWidth="75.0" text="Altura" />
+            <TableColumn fx:id="colActivity" prefWidth="75.0" text="Actividad" />
+            <TableColumn fx:id="colGER" prefWidth="75.0" text="GER" />
+            <TableColumn fx:id="colGET" prefWidth="75.0" text="GET" />
         </columns>
          <opaqueInsets>
             <Insets right="10.0" />
@@ -222,7 +222,7 @@
       </TableView>
    </center>
    <bottom>
-      <Label text="Información del programa" BorderPane.alignment="CENTER">
+      <Label fx:id="lblInfo" text="Información del programa" BorderPane.alignment="CENTER">
          <padding>
             <Insets bottom="10.0" left="10.0" right="10.0" top="10.0" />
          </padding>
